@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>XYZ — Personal Portfolio</title>
+
+  <meta
+    name="description"
+    content="Personal portfolio of XYZ — About Me, Social Media and Promotion."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="background">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar glass">
+
+    <div class="logo">
+      <span>XYZ</span>
+    </div>
+
+    <nav>
+      <button class="nav-btn active" data-section="about">
+        About Me
+      </button>
+
+      <button class="nav-btn" data-section="social">
+        My Social Media
+      </button>
+    </nav>
+
+    <button class="promotion-btn" data-section="promotion">
+      Promotion By Me
+      <span>↗</span>
+    </button>
+
+  </header>
+
+
+  <!-- Main -->
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section active">
+
+      <div class="hero-grid">
+
+        <div class="hero-content">
+
+          <div class="status glass">
+            <span class="status-dot"></span>
+            Available
+          </div>
+
+          <p class="eyebrow">
+            PERSONAL PORTFOLIO
+          </p>
+
+          <h1>
+            Abu <span>Bokkor</span>
+          </h1>
+
+          <h2>
+            Creating my own path.
+          </h2>
+
+          <p class="description">
+            Welcome to my personal space. This portfolio contains
+            information about me, my social media presence and the
+            promotions I work with.
+          </p>
+
+          <div class="hero-buttons">
+
+            <button class="primary-btn" data-section="social">
+              Explore Socials
+              <span>→</span>
+            </button>
+
+            <button class="secondary-btn" data-section="promotion">
+              Promotions
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- Profile Card -->
+        <div class="profile-wrapper">
+
+          <div class="profile-card glass">
+
+            <div class="profile-glow"></div>
+
+            <div class="profile-image">
+              <img
+                src="profile.jpg"
+                alt="Profile"
+              />
+            </div>
+
+            <div class="profile-info">
+
+              <h3>Abu Bokkor</h3>
+
+              <p>
+                Personal Profile
+              </p>
+
+            </div>
+
+            <div class="profile-line"></div>
+
+            <div class="mini-stats">
+
+              <div>
+                <strong>01</strong>
+                <span>Profile</span>
+              </div>
+
+              <div>
+                <strong>∞</strong>
+                <span>Ideas</span>
+              </div>
+
+              <div>
+                <strong>24/7</strong>
+                <span>Online</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- About cards -->
+
+      <div class="about-cards">
+
+        <article class="info-card glass">
+
+          <div class="card-icon">
+            ✦
+          </div>
+
+          <h3>About Me</h3>
+
+          <p>
+            A personal introduction, interests, activities and
+            the things that represent me.
+          </p>
+
+        </article>
+
+
+        <article class="info-card glass">
+
+          <div class="card-icon">
+            ◉
+          </div>
+
+          <h3>My Social Media</h3>
+
+          <p>
+            Find my official social media profiles and stay
+            connected with me.
+          </p>
+
+        </article>
+
+
+        <article class="info-card glass">
+
+          <div class="card-icon">
+            ↗
+          </div>
+
+          <h3>Promotion By Me</h3>
+
+          <p>
+            Explore the brands, pages and projects that I
+            promote.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOCIAL -->
+    <section id="social" class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          CONNECT WITH ME
+        </p>
+
+        <h2>
+          My Social <span>Media</span>
+        </h2>
+
+        <p>
+          Follow my official social platforms.
+        </p>
+
+      </div>
+
+
+      <div id="socialContainer" class="social-grid">
+
+        <!-- JavaScript will load social links -->
+
+      </div>
+
+    </section>
+
+
+    <!-- PROMOTION -->
+    <section id="promotion" class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          COLLABORATION
+        </p>
+
+        <h2>
+          Promotion <span>By Me</span>
+        </h2>
+
+        <p>
+          Promotions and featured projects.
+        </p>
+
+      </div>
+
+
+      <div id="promotionContainer" class="promotion-grid">
+
+        <!-- JavaScript will load promotions -->
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer glass">
+
+    <div>
+      <strong>XYZ</strong>
+      <span>Personal Portfolio</span>
+    </div>
+
+    <p>
+      © <span id="year"></span> XYZ. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    Updated successfully
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+            </html>
